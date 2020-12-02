@@ -1,7 +1,7 @@
 #ifndef KSIAZKAADRESOWA_H
 #define KSIAZKAADRESOWA_H
+
 #include <iostream>
-#include "KsiazkaAdresowa.h"
 #include "MenadzerUzytkownika.h"
 
 using namespace std;
@@ -10,7 +10,12 @@ class KsiazkaAdresowa
 {
     MenadzerUzytkownika menadzerUzytkownika;
     public:
-    KsiazkaAdresowa ();
+    KsiazkaAdresowa (string nazwaPlikuZUzytkownikami)
+    :menadzerUzytkownika(nazwaPlikuZUzytkownikami)
+    {
+        menadzerUzytkownika.wczytajUzytkownikowZPliku();
+    };
+
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
 };
