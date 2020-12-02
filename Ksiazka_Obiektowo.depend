@@ -1,17 +1,16 @@
 # depslib dependency file v1.0
-1606902906 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\main.cpp
+1606903987 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
-1606902823 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.cpp
+1606906975 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
 1606748505 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\uzytkownik.cpp
 	"Uzytkownik.h"
 
-1606901752 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.h
+1606908278 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.h
 	<iostream>
-	"KsiazkaAdresowa.h"
 	"MenadzerUzytkownika.h"
 
 1606843119 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\uzytkownik.h
@@ -24,10 +23,10 @@
 	<iostream>
 	<sstream>
 
-1606902780 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.cpp
+1606908241 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.cpp
 	"PilikZUzytkownikami.h"
 
-1606903293 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.h
+1606908241 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.h
 	<iostream>
 	<fstream>
 	<vector>
@@ -35,7 +34,7 @@
 	"MetodyPomocnicze.h"
 	"Uzytkownik.h"
 
-1606901752 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.h
+1606906737 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.h
 	<iostream>
 	<vector>
 	"Uzytkownik.h"
@@ -44,6 +43,6 @@
 	<sstream>
 	"PilikZUzytkownikami.h"
 
-1606902829 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.cpp
+1606906737 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.cpp
 	"MenadzerUzytkownika.h"
 
