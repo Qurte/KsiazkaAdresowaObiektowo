@@ -19,12 +19,14 @@ class MenadzerUzytkownika
 
     int pobierzIdNowegoUzytkownika();
     bool czyIstniejeLogin(string login);
+    Uzytkownik podajDaneNowegoUzytkownika ();
 
 public:
     void rejestracjaUzytkownika();
     int logowanieUzytkownika ();
     void wypiszWszystkichUzytkownikow();
-    Uzytkownik podajDaneNowegoUzytkownika ();
+    void wczytajUzytkownikowZPliku ();
+
 
 };
 #endif
