@@ -18,6 +18,7 @@ class KsiazkaAdresowa
 
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
-    int logowanieUzytkownika ();
+    void logowanieUzytkownika ();
+    void zmianaHaslaZalogowanegoUzytkownika();
 };
 #endif

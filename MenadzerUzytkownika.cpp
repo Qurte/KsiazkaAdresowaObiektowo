@@ -59,9 +59,9 @@ void MenadzerUzytkownika::wypiszWszystkichUzytkownikow()
 {
     for (int i = 0; i < uzytkownicy.size(); i++)
     {
-        cout << uzytkownicy[i].pobierzId() << endl;
-        cout << uzytkownicy[i].pobierzLogin() << endl;
-        cout << uzytkownicy[i].pobierzHaslo() << endl;
+        cout << "Id: " << uzytkownicy[i].pobierzId() << endl;
+        cout << "Login: " << uzytkownicy[i].pobierzLogin() << endl;
+        cout << "Haslo: " << uzytkownicy[i].pobierzHaslo() << endl;
 
     }
 }
@@ -69,7 +69,7 @@ void MenadzerUzytkownika::wczytajUzytkownikowZPliku ()
 {
     uzytkownicy = plikZUzytkownikami.wczytajUzytkownikowZPliku();
 }
-int MenadzerUzytkownika::logowanieUzytkownika()
+void MenadzerUzytkownika::logowanieUzytkownika()
 {
     Uzytkownik uzytkownik;
     string login = "", haslo= "";
@@ -77,9 +77,9 @@ int MenadzerUzytkownika::logowanieUzytkownika()
     cout << endl << "Podaj login: ";
     login = wczytajLinie();
 
-    for (int i =0 ; i < uzytkownicy.size(); i++)
+    for (int i = 0 ; i < uzytkownicy.size(); i++)
     {
-        if (uzytkownicy[i].pobierzLogin() == login)
+        if (login == uzytkownicy[i].pobierzLogin())
         {
             for (int iloscProb = 3; iloscProb > 0; iloscProb--)
             {
@@ -90,21 +90,18 @@ int MenadzerUzytkownika::logowanieUzytkownika()
                 {
                     cout << endl << "Zalogowales sie." << endl << endl;
                     system("pause");
-                    return uzytkownicy[i].pobierzId();
+                    idZalogowanegoUzytkownika = uzytkownicy[i].pobierzId();
+                    return ;
                 }
             }
             cout << "Wprowadzono 3 razy bledne haslo." << endl;
             system("pause");
-            return 0;
-        }
-        else
-        {
-            cout << "Nie ma uzytkownika z takim loginem" << endl << endl;
-            system("pause");
-            return 0;
+            return ;
         }
     }
-
+            cout << "Nie ma uzytkownika z takim loginem" << endl << endl;
+            system("pause");
+            return ;
 }
 string MenadzerUzytkownika::wczytajLinie()
 {
@@ -112,3 +109,24 @@ string MenadzerUzytkownika::wczytajLinie()
     getline(cin, wejscie);
     return wejscie;
 }
+void MenadzerUzytkownika::zmianaHaslaZalogowanegoUzytkownika()
+{
+    string noweHaslo = "";
+    cout << "Podaj nowe haslo: ";
+    noweHaslo = wczytajLinie();
+
+    for (int i = 0; i < uzytkownicy.size(); i++)
+    {
+        if (uzytkownicy[i].pobierzId() == idZalogowanegoUzytkownika)
+        {
+            uzytkownicy[i].ustawHaslo(noweHaslo);
+            cout << "Haslo zostalo zmienione." << endl << endl;
+            system("pause");
+        }
+    }
+
+    plikZUzytkownikami.zapiszWszystkichUzytkownikowDoPliku(uzytkownicy);
+}
+
+
+
