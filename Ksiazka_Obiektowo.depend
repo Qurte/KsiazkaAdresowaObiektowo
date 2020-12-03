@@ -3,13 +3,13 @@
 	<iostream>
 	"KsiazkaAdresowa.h"
 
-1606990447 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.cpp
+1606994846 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
 1606748505 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\uzytkownik.cpp
 	"Uzytkownik.h"
 
-1606990366 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.h
+1606994846 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.h
 	<iostream>
 	"MenadzerUzytkownika.h"
 
@@ -23,10 +23,10 @@
 	<iostream>
 	<sstream>
 
-1606990342 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.cpp
+1606993067 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.cpp
 	"PilikZUzytkownikami.h"
 
-1606990342 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.h
+1606993067 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.h
 	<iostream>
 	<fstream>
 	<vector>
@@ -34,7 +34,7 @@
 	"MetodyPomocnicze.h"
 	"Uzytkownik.h"
 
-1606990513 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.h
+1606993067 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.h
 	<iostream>
 	<vector>
 	"Uzytkownik.h"
@@ -43,6 +43,6 @@
 	<sstream>
 	"PilikZUzytkownikami.h"
 
-1606992906 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.cpp
+1606993067 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.cpp
 	"MenadzerUzytkownika.h"
 
