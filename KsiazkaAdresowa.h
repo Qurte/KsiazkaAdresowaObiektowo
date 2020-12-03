@@ -9,6 +9,7 @@ using namespace std;
 class KsiazkaAdresowa
 {
     MenadzerUzytkownika menadzerUzytkownika;
+    char wczytajZnak ();
     public:
     KsiazkaAdresowa (string nazwaPlikuZUzytkownikami)
     :menadzerUzytkownika(nazwaPlikuZUzytkownikami)
@@ -20,5 +21,9 @@ class KsiazkaAdresowa
     void wypiszWszystkichUzytkownikow();
     void logowanieUzytkownika ();
     void zmianaHaslaZalogowanegoUzytkownika();
+    char wybierzOpcjeZMenuGlownego();
+    char wybierzOpcjeZMenuUzytkownika ();
+    bool czyUzytkownikJestZalogowany();
+    void wyloguj ();
 };
 #endif
