@@ -23,5 +23,7 @@ class KsiazkaAdresowa
     void zmianaHaslaZalogowanegoUzytkownika();
     char wybierzOpcjeZMenuGlownego();
     char wybierzOpcjeZMenuUzytkownika ();
+    bool czyUzytkownikJestZalogowany();
+    void wyloguj ();
 };
 #endif

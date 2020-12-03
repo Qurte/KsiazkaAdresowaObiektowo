@@ -1,15 +1,15 @@
 # depslib dependency file v1.0
-1606992841 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\main.cpp
+1606994886 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
-1606994846 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.cpp
+1607005199 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
 1606748505 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\uzytkownik.cpp
 	"Uzytkownik.h"
 
-1606994846 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.h
+1607005171 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.h
 	<iostream>
 	"MenadzerUzytkownika.h"
 
@@ -34,7 +34,7 @@
 	"MetodyPomocnicze.h"
 	"Uzytkownik.h"
 
-1606993067 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.h
+1607005170 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.h
 	<iostream>
 	<vector>
 	"Uzytkownik.h"
@@ -43,6 +43,6 @@
 	<sstream>
 	"PilikZUzytkownikami.h"
 
-1606993067 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.cpp
+1607005317 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.cpp
 	"MenadzerUzytkownika.h"
 

@@ -74,3 +74,11 @@ char KsiazkaAdresowa::wczytajZnak()
     }
     return znak;
 }
+bool KsiazkaAdresowa::czyUzytkownikJestZalogowany()
+{
+    menadzerUzytkownika.czyUzytkownikJestZalogowany();
+}
+void KsiazkaAdresowa::wyloguj ()
+{
+    menadzerUzytkownika.wyloguj();
+}

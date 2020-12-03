@@ -72,6 +72,7 @@ void MenadzerUzytkownika::wczytajUzytkownikowZPliku ()
 void MenadzerUzytkownika::logowanieUzytkownika()
 {
     Uzytkownik uzytkownik;
+    czyJestZalogowany = false;
     string login = "", haslo= "";
 
     cout << endl << "Podaj login: ";
@@ -90,7 +91,10 @@ void MenadzerUzytkownika::logowanieUzytkownika()
                 {
                     cout << endl << "Zalogowales sie." << endl << endl;
                     system("pause");
-                    idZalogowanegoUzytkownika = uzytkownicy[i].pobierzId();
+                    zalogowanyUzytkownik.ustawLogin(uzytkownicy[i].pobierzLogin());
+                    zalogowanyUzytkownik.ustawHaslo(uzytkownicy[i].pobierzHaslo());
+                    zalogowanyUzytkownik.ustawId(uzytkownicy[i].pobierzId());
+                    czyJestZalogowany = true;
                     return ;
                 }
             }
@@ -117,7 +121,7 @@ void MenadzerUzytkownika::zmianaHaslaZalogowanegoUzytkownika()
 
     for (int i = 0; i < uzytkownicy.size(); i++)
     {
-        if (uzytkownicy[i].pobierzId() == idZalogowanegoUzytkownika)
+        if (uzytkownicy[i].pobierzId() == zalogowanyUzytkownik.pobierzId())
         {
             uzytkownicy[i].ustawHaslo(noweHaslo);
             cout << "Haslo zostalo zmienione." << endl << endl;
@@ -127,6 +131,15 @@ void MenadzerUzytkownika::zmianaHaslaZalogowanegoUzytkownika()
 
     plikZUzytkownikami.zapiszWszystkichUzytkownikowDoPliku(uzytkownicy);
 }
-
-
+ bool MenadzerUzytkownika::czyUzytkownikJestZalogowany()
+ {
+     return czyJestZalogowany;
+ }
+void MenadzerUzytkownika::wyloguj ()
+{
+    zalogowanyUzytkownik.ustawLogin("");
+    zalogowanyUzytkownik.ustawHaslo("");
+    zalogowanyUzytkownik.ustawId(0);
+    czyJestZalogowany = false;
+}
 
