@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     char wybor;
-    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt");
+    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt" , "Adresaci.txt");
 
     while (true)
     {
@@ -30,6 +30,8 @@ int main()
                 break;
             }
         }
+
+
         else
         {
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
@@ -37,7 +39,7 @@ int main()
             switch (wybor)
             {
             case '1':
-                //idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
+                ksiazkaAdresowa.dodajAdresata();
                 break;
             case '2':
                // wyszukajAdresatowPoImieniu(adresaci);
@@ -46,7 +48,7 @@ int main()
                // wyszukajAdresatowPoNazwisku(adresaci);
                 break;
             case '4':
-              //  wyswietlWszystkichAdresatow(adresaci);
+                 ksiazkaAdresowa.wyswietlWszystkichAdresatow();
                 break;
             case '5':
                // idUsunietegoAdresata = usunAdresata(adresaci);
