@@ -1,32 +1,34 @@
 # depslib dependency file v1.0
-1606994886 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\main.cpp
+1607339564 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
-1607005199 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.cpp
+1607340316 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
 1606748505 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\uzytkownik.cpp
 	"Uzytkownik.h"
 
-1607005171 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.h
+1607338803 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.h
 	<iostream>
 	"MenadzerUzytkownika.h"
+	"MenadzerAdresata.h"
 
 1606843119 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\uzytkownik.h
 	<iostream>
 
-1606843119 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\metodypomocnicze.cpp
+1607336475 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\metodypomocnicze.cpp
 	"MetodyPomocnicze.h"
 
-1606843119 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\metodypomocnicze.h
+1607336480 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\metodypomocnicze.h
 	<iostream>
 	<sstream>
+	<fstream>
 
-1606993067 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.cpp
+1607334745 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.cpp
 	"PilikZUzytkownikami.h"
 
-1606993067 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.h
+1607334669 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.h
 	<iostream>
 	<fstream>
 	<vector>
@@ -34,7 +36,7 @@
 	"MetodyPomocnicze.h"
 	"Uzytkownik.h"
 
-1607005170 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.h
+1607336654 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.h
 	<iostream>
 	<vector>
 	"Uzytkownik.h"
@@ -42,7 +44,120 @@
 	<fstream>
 	<sstream>
 	"PilikZUzytkownikami.h"
+	"MetodyPomocnicze.h"
 
-1607005317 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.cpp
+1607336954 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.cpp
 	"MenadzerUzytkownika.h"
+
+1607083554 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\adresat.cpp
+	"Adresat.h"
+
+1607083535 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\adresat.h
+	<iostream>
+
+1607339528 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeradresata.cpp
+	"MenadzerAdresata.h"
+
+1607339479 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeradresata.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	<algorithm>
+	"PlikZAdresatami.h"
+	"Adresat.h"
+	"MetodyPomocnicze.h"
+
+1607336475 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\plikzadresatami.h
+	<iostream>
+	<fstream>
+	<vector>
+	<cstdlib>
+	"Adresat.h"
+	"MetodyPomocnicze.h"
+
+1607339983 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\plikzadresatami.cpp
+	"PlikZAdresatami.h"
+
+1607083554 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\adresat.cpp
+	"Adresat.h"
+
+1607083535 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\adresat.h
+	<iostream>
+
+1607340316 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\ksiazkaadresowa.cpp
+	"KsiazkaAdresowa.h"
+
+1607338803 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\ksiazkaadresowa.h
+	<iostream>
+	"MenadzerUzytkownika.h"
+	"MenadzerAdresata.h"
+
+1607336654 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\menadzeruzytkownika.h
+	<iostream>
+	<vector>
+	"Uzytkownik.h"
+	<windows.h>
+	<fstream>
+	<sstream>
+	"PilikZUzytkownikami.h"
+	"MetodyPomocnicze.h"
+
+1606843119 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\uzytkownik.h
+	<iostream>
+
+1607334669 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\pilikzuzytkownikami.h
+	<iostream>
+	<fstream>
+	<vector>
+	<cstdlib>
+	"MetodyPomocnicze.h"
+	"Uzytkownik.h"
+
+1607336480 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\metodypomocnicze.h
+	<iostream>
+	<sstream>
+	<fstream>
+
+1607339479 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\menadzeradresata.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	<algorithm>
+	"PlikZAdresatami.h"
+	"Adresat.h"
+	"MetodyPomocnicze.h"
+
+1607336475 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\plikzadresatami.h
+	<iostream>
+	<fstream>
+	<vector>
+	<cstdlib>
+	"Adresat.h"
+	"MetodyPomocnicze.h"
+
+1607339564 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\main.cpp
+	<iostream>
+	"KsiazkaAdresowa.h"
+
+1607339528 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\menadzeradresata.cpp
+	"MenadzerAdresata.h"
+
+1607336954 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\menadzeruzytkownika.cpp
+	"MenadzerUzytkownika.h"
+
+1607336475 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\metodypomocnicze.cpp
+	"MetodyPomocnicze.h"
+
+1607334745 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\pilikzuzytkownikami.cpp
+	"PilikZUzytkownikami.h"
+
+1607339983 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\plikzadresatami.cpp
+	"PlikZAdresatami.h"
+
+1606748505 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\uzytkownik.cpp
+	"Uzytkownik.h"
 

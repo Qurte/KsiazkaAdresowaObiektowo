@@ -8,11 +8,13 @@
 #include <fstream>
 #include <sstream>
 #include "PilikZUzytkownikami.h"
+#include "MetodyPomocnicze.h"
 
 using namespace std;
 
 class MenadzerUzytkownika
 {
+    MetodyPomocnicze metodyPomocnicze;
     vector <Uzytkownik> uzytkownicy;
     PlikZUzytkownikami plikZUzytkownikami;
     Uzytkownik zalogowanyUzytkownik;
@@ -20,7 +22,6 @@ class MenadzerUzytkownika
     int pobierzIdNowegoUzytkownika();
     bool czyIstniejeLogin(string login);
     Uzytkownik podajDaneNowegoUzytkownika ();
-    string wczytajLinie();
     bool czyJestZalogowany;
 
 public:
@@ -30,8 +31,11 @@ public:
     void wypiszWszystkichUzytkownikow();
     void wczytajUzytkownikowZPliku ();
     void zmianaHaslaZalogowanegoUzytkownika ();
-    bool czyUzytkownikJestZalogowany();
     void wyloguj ();
+    bool czyUzytkownikJestZalogowany();
+    int pobierzIdZalogowanegoUzytkownika();
+
+
 
 };
 #endif

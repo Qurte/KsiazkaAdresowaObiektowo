@@ -23,7 +23,8 @@ Uzytkownik MenadzerUzytkownika::podajDaneNowegoUzytkownika()
         cout << "Podaj login: ";
         cin >> login;
         uzytkownik.ustawLogin(login);
-    } while (czyIstniejeLogin(uzytkownik.pobierzLogin()) == true);
+    }
+    while (czyIstniejeLogin(uzytkownik.pobierzLogin()) == true);
     string haslo;
     cout << "Podaj haslo: ";
     cin >> haslo;
@@ -76,7 +77,7 @@ void MenadzerUzytkownika::logowanieUzytkownika()
     string login = "", haslo= "";
 
     cout << endl << "Podaj login: ";
-    login = wczytajLinie();
+    login = metodyPomocnicze.wczytajLinie();
 
     for (int i = 0 ; i < uzytkownicy.size(); i++)
     {
@@ -85,7 +86,7 @@ void MenadzerUzytkownika::logowanieUzytkownika()
             for (int iloscProb = 3; iloscProb > 0; iloscProb--)
             {
                 cout << "Podaj haslo. Pozostalo prob: " << iloscProb << ": ";
-                haslo = wczytajLinie();
+                haslo = metodyPomocnicze.wczytajLinie();
 
                 if (uzytkownicy[i].pobierzHaslo() == haslo)
                 {
@@ -103,21 +104,15 @@ void MenadzerUzytkownika::logowanieUzytkownika()
             return ;
         }
     }
-            cout << "Nie ma uzytkownika z takim loginem" << endl << endl;
-            system("pause");
-            return ;
-}
-string MenadzerUzytkownika::wczytajLinie()
-{
-    string wejscie = "";
-    getline(cin, wejscie);
-    return wejscie;
+    cout << "Nie ma uzytkownika z takim loginem" << endl << endl;
+    system("pause");
+    return ;
 }
 void MenadzerUzytkownika::zmianaHaslaZalogowanegoUzytkownika()
 {
     string noweHaslo = "";
     cout << "Podaj nowe haslo: ";
-    noweHaslo = wczytajLinie();
+    noweHaslo = metodyPomocnicze.wczytajLinie();
 
     for (int i = 0; i < uzytkownicy.size(); i++)
     {
@@ -131,10 +126,6 @@ void MenadzerUzytkownika::zmianaHaslaZalogowanegoUzytkownika()
 
     plikZUzytkownikami.zapiszWszystkichUzytkownikowDoPliku(uzytkownicy);
 }
- bool MenadzerUzytkownika::czyUzytkownikJestZalogowany()
- {
-     return czyJestZalogowany;
- }
 void MenadzerUzytkownika::wyloguj ()
 {
     zalogowanyUzytkownik.ustawLogin("");
@@ -142,4 +133,14 @@ void MenadzerUzytkownika::wyloguj ()
     zalogowanyUzytkownik.ustawId(0);
     czyJestZalogowany = false;
 }
+bool MenadzerUzytkownika::czyUzytkownikJestZalogowany()
+{
+    return czyJestZalogowany;
+}
+int MenadzerUzytkownika::pobierzIdZalogowanegoUzytkownika()
+{
+    return zalogowanyUzytkownik.pobierzId();
+}
+
+
 

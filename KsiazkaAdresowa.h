@@ -3,16 +3,24 @@
 
 #include <iostream>
 #include "MenadzerUzytkownika.h"
+#include "MenadzerAdresata.h"
 
 using namespace std;
 
 class KsiazkaAdresowa
 {
     MenadzerUzytkownika menadzerUzytkownika;
+    MenadzerAdresata menadzerAdresata;
+
+    int idOstatniegoAdresata;
+
+    int wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika);
+    int pobierzIdZalogowanegoUzytkownika ();
     char wczytajZnak ();
+
     public:
-    KsiazkaAdresowa (string nazwaPlikuZUzytkownikami)
-    :menadzerUzytkownika(nazwaPlikuZUzytkownikami)
+    KsiazkaAdresowa (string nazwaPlikuZUzytkownikami, string NAZWAPLIKUZADRESATAMI)
+    :menadzerUzytkownika(nazwaPlikuZUzytkownikami), menadzerAdresata(NAZWAPLIKUZADRESATAMI)
     {
         menadzerUzytkownika.wczytajUzytkownikowZPliku();
     };
@@ -21,9 +29,12 @@ class KsiazkaAdresowa
     void wypiszWszystkichUzytkownikow();
     void logowanieUzytkownika ();
     void zmianaHaslaZalogowanegoUzytkownika();
+    void wyloguj ();
     char wybierzOpcjeZMenuGlownego();
     char wybierzOpcjeZMenuUzytkownika ();
     bool czyUzytkownikJestZalogowany();
-    void wyloguj ();
+    void wyswietlWszystkichAdresatow();
+    void dodajAdresata ();
+
 };
 #endif
