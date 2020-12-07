@@ -30,8 +30,6 @@ int main()
                 break;
             }
         }
-
-
         else
         {
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();

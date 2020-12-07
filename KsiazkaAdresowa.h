@@ -10,19 +10,21 @@ using namespace std;
 class KsiazkaAdresowa
 {
     MenadzerUzytkownika menadzerUzytkownika;
-    MenadzerAdresata menadzerAdresata;
+    MenadzerAdresata *menadzerAdresata;
+    const string NAZWA_PLIKU_Z_ADRESATAMI;
 
-    int idOstatniegoAdresata;
-
-    int wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika);
-    int pobierzIdZalogowanegoUzytkownika ();
     char wczytajZnak ();
 
     public:
     KsiazkaAdresowa (string nazwaPlikuZUzytkownikami, string NAZWAPLIKUZADRESATAMI)
-    :menadzerUzytkownika(nazwaPlikuZUzytkownikami), menadzerAdresata(NAZWAPLIKUZADRESATAMI)
+    :menadzerUzytkownika(nazwaPlikuZUzytkownikami), NAZWA_PLIKU_Z_ADRESATAMI(NAZWAPLIKUZADRESATAMI)
     {
-        menadzerUzytkownika.wczytajUzytkownikowZPliku();
+        menadzerAdresata = NULL;
+    }
+    ~KsiazkaAdresowa()
+    {
+        delete menadzerAdresata;
+        menadzerAdresata = NULL;
     };
 
     void rejestracjaUzytkownika();
