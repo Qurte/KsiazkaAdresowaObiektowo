@@ -63,7 +63,7 @@ Adresat MenadzerAdresata::podajDaneNowegoAdresata(int idZalogowanegoUzytkownika,
 
     cout << "Podaj nazwisko: ";
     adresat.ustawNazwisko(metodyPomocnicze.wczytajLinie());
-    adresat.ustawImie(zamienPierwszaLitereNaDuzaAPozostaleNaMale(adresat.pobierzNazwisko()));
+    adresat.ustawNazwisko(zamienPierwszaLitereNaDuzaAPozostaleNaMale(adresat.pobierzNazwisko()));
 
     cout << "Podaj numer telefonu: ";
     adresat.ustawNrTelefonu(metodyPomocnicze.wczytajLinie());
