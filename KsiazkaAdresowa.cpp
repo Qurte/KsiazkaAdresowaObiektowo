@@ -101,6 +101,10 @@ void KsiazkaAdresowa::usunAdresata()
 {
     menadzerAdresata -> usunAdresata();
 }
+void KsiazkaAdresowa::edytujAdresata()
+{
+    menadzerAdresata -> edytujAdresata();
+}
 
 
 

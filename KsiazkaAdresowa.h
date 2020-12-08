@@ -38,6 +38,7 @@ class KsiazkaAdresowa
     void wyswietlWszystkichAdresatow();
     void dodajAdresata ();
     void usunAdresata();
+    void edytujAdresata();
 
 };
 #endif
