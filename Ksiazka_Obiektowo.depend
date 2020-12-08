@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1607423963 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\main.cpp
+1607424780 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
@@ -17,24 +17,25 @@
 1606843119 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\uzytkownik.h
 	<iostream>
 
-1607342550 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\metodypomocnicze.cpp
+1607426511 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\metodypomocnicze.cpp
 	"MetodyPomocnicze.h"
 
-1607342550 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\metodypomocnicze.h
+1607426511 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\metodypomocnicze.h
 	<iostream>
 	<sstream>
 	<fstream>
 
-1607424578 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.cpp
+1607426521 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.cpp
 	"PilikZUzytkownikami.h"
 
-1607424576 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.h
+1607426027 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.h
 	<iostream>
 	<fstream>
 	<vector>
 	<cstdlib>
 	"MetodyPomocnicze.h"
 	"Uzytkownik.h"
+	"PlikTekstowy.h"
 
 1607424626 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.h
 	<iostream>
@@ -69,15 +70,16 @@
 	"Adresat.h"
 	"MetodyPomocnicze.h"
 
-1607423091 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\plikzadresatami.h
+1607426188 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\plikzadresatami.h
 	<iostream>
 	<fstream>
 	<vector>
 	<cstdlib>
 	"Adresat.h"
 	"MetodyPomocnicze.h"
+	"PlikTekstowy.h"
 
-1607420204 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\plikzadresatami.cpp
+1607426251 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\plikzadresatami.cpp
 	"PlikZAdresatami.h"
 
 1607083554 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\adresat.cpp
@@ -160,4 +162,8 @@
 
 1606748505 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo — kopia (2)\uzytkownik.cpp
 	"Uzytkownik.h"
+
+1607426511 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pliktekstowy.h
+	<iostream>
+	<fstream>
 

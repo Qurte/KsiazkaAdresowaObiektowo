@@ -11,7 +11,6 @@ class MetodyPomocnicze
     public:
     static string konwerjsaIntNaString(int liczba);
     string wczytajLinie();
-    bool czyPlikJestPusty(fstream &plikTekstowy);
     static int konwersjaStringNaInt(string liczba);
 
 };
