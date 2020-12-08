@@ -8,21 +8,21 @@
 
 #include "Adresat.h"
 #include "MetodyPomocnicze.h"
+#include "PlikTekstowy.h"
 
 using namespace std;
 
-class PlikZAdresatami
+class PlikZAdresatami : public PlikTekstowy
 {
     MetodyPomocnicze metodyPomocnicze;
     int idOstatniegoAdresata;
-    string nazwaPlikuZAdresatami;
 
     int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     Adresat pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami);
     string pobierzLiczbe(string tekst, int pozycjaZnaku);
     int pobierzZPlikuIdOstatniegoAdresata();
 public:
-    PlikZAdresatami (string NAZWAPLIKUZADRESATAMI) : nazwaPlikuZAdresatami(NAZWAPLIKUZADRESATAMI) {
+    PlikZAdresatami (string nazwaPlikuZAdresatami) : PlikTekstowy(nazwaPlikuZAdresatami) {
     int idOstatniegoAdresata = 0;
     };
     int pobierzidOstatniegoAdresata ();
