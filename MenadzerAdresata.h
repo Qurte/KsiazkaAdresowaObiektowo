@@ -19,18 +19,24 @@ class MenadzerAdresata
     vector <Adresat> adresaci;
     PlikZAdresatami plikZAdresatami;
     MetodyPomocnicze metodyPomocnicze;
-    string nazwaPlikuZAdresatami;
+    const string nazwaPlikuZAdresatami;
+    const string nazwaTymczasowegoPlikuZAdresatami;
     const int ID_ZALOGOWANEGO_UZYTKOWNIKA;
 
     void wyswietlDaneAdresata(Adresat adresat);
     Adresat podajDaneNowegoAdresata(int idOstatniegoAdresata);
     string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
+    int podajIdWybranegoAdresata();
+    char wczytajZnak();
+    void usunWybranaLinieWPliku(int idUsuwanegoAdresata);
+    int wczytajLiczbeCalkowita();
 
 public:
-    MenadzerAdresata (string NAZWAPLIKUZADRESATAMI, int idZalogowanegoUzytkownika): plikZAdresatami(NAZWAPLIKUZADRESATAMI),ID_ZALOGOWANEGO_UZYTKOWNIKA(idZalogowanegoUzytkownika), nazwaPlikuZAdresatami(NAZWAPLIKUZADRESATAMI) {
+    MenadzerAdresata (string NAZWAPLIKUZADRESATAMI, int idZalogowanegoUzytkownika): plikZAdresatami(NAZWAPLIKUZADRESATAMI),ID_ZALOGOWANEGO_UZYTKOWNIKA(idZalogowanegoUzytkownika), nazwaPlikuZAdresatami(NAZWAPLIKUZADRESATAMI), nazwaTymczasowegoPlikuZAdresatami("Tymczasowo_Adresaci.txt") {
     adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(ID_ZALOGOWANEGO_UZYTKOWNIKA);
     };
     void wyswietlWszystkichAdresatow();
     void dodajAdresata();
+    void usunAdresata();
 };
 #endif
