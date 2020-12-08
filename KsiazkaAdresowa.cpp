@@ -109,6 +109,10 @@ void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
 {
     menadzerAdresata -> wyszukajAdresatowPoImieniu();
 }
+void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
+{
+    menadzerAdresata -> wyszukajAdresatowPoNazwisku();
+}
 
 
 
