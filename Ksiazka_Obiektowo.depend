@@ -1,15 +1,15 @@
 # depslib dependency file v1.0
-1607423491 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\main.cpp
+1607423963 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
-1607423491 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.cpp
+1607423963 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
 1606748505 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\uzytkownik.cpp
 	"Uzytkownik.h"
 
-1607423491 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.h
+1607423963 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\ksiazkaadresowa.h
 	<iostream>
 	"MenadzerUzytkownika.h"
 	"MenadzerAdresata.h"
@@ -25,10 +25,10 @@
 	<sstream>
 	<fstream>
 
-1607353139 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.cpp
+1607424578 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.cpp
 	"PilikZUzytkownikami.h"
 
-1607353096 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.h
+1607424576 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\pilikzuzytkownikami.h
 	<iostream>
 	<fstream>
 	<vector>
@@ -36,7 +36,7 @@
 	"MetodyPomocnicze.h"
 	"Uzytkownik.h"
 
-1607357779 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.h
+1607424626 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.h
 	<iostream>
 	<vector>
 	"Uzytkownik.h"
@@ -46,7 +46,7 @@
 	"PilikZUzytkownikami.h"
 	"MetodyPomocnicze.h"
 
-1607357427 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.cpp
+1607424636 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeruzytkownika.cpp
 	"MenadzerUzytkownika.h"
 
 1607342550 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\adresat.cpp
@@ -55,10 +55,10 @@
 1607342550 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\adresat.h
 	<iostream>
 
-1607423649 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeradresata.cpp
+1607424329 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeradresata.cpp
 	"MenadzerAdresata.h"
 
-1607423628 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeradresata.h
+1607423963 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeradresata.h
 	<iostream>
 	<vector>
 	<windows.h>
