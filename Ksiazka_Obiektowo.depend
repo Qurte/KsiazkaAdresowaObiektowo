@@ -55,10 +55,10 @@
 1607342550 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\adresat.h
 	<iostream>
 
-1607422171 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeradresata.cpp
+1607423435 source:c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeradresata.cpp
 	"MenadzerAdresata.h"
 
-1607421672 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeradresata.h
+1607423435 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\menadzeradresata.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -69,7 +69,7 @@
 	"Adresat.h"
 	"MetodyPomocnicze.h"
 
-1607420960 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\plikzadresatami.h
+1607423091 c:\users\student230217\desktop\kurs programowania\c++\obiektówka\ksiazka_obiektowo\plikzadresatami.h
 	<iostream>
 	<fstream>
 	<vector>

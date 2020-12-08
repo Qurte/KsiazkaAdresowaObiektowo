@@ -33,6 +33,7 @@ class MenadzerAdresata
     char wybierzOpcjeZMenuEdycja();
     void zaktualizujDaneWybranegoAdresata(Adresat adresat);
     void edytujWybranaLinieWPliku(string liniaZDanymiAdresataOddzielonePionowymiKreskami, int idEdytowanegoAdresata);
+    void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
 
 public:
     MenadzerAdresata (string NAZWAPLIKUZADRESATAMI, int idZalogowanegoUzytkownika): plikZAdresatami(NAZWAPLIKUZADRESATAMI),ID_ZALOGOWANEGO_UZYTKOWNIKA(idZalogowanegoUzytkownika), nazwaPlikuZAdresatami(NAZWAPLIKUZADRESATAMI), nazwaTymczasowegoPlikuZAdresatami("Tymczasowo_Adresaci.txt") {
@@ -42,5 +43,6 @@ public:
     void dodajAdresata();
     void usunAdresata();
     void edytujAdresata();
+    void wyszukajAdresatowPoImieniu();
 };
 #endif

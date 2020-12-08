@@ -105,7 +105,10 @@ void KsiazkaAdresowa::edytujAdresata()
 {
     menadzerAdresata -> edytujAdresata();
 }
-
+void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
+{
+    menadzerAdresata -> wyszukajAdresatowPoImieniu();
+}
 
 
 
