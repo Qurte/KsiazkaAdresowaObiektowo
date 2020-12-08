@@ -81,4 +81,121 @@ string MenadzerAdresata::zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst
     }
     return tekst;
 }
+void MenadzerAdresata::usunAdresata()
+{
+    int idUsuwanegoAdresata = 0;
+
+    system("cls");
+    cout << ">>> USUWANIE WYBRANEGO ADRESATA <<<" << endl << endl;
+    idUsuwanegoAdresata = podajIdWybranegoAdresata();
+
+    char znak;
+    bool czyIstniejeAdresat = false;
+
+    for (vector <Adresat>::iterator itr = adresaci.begin(); itr != adresaci.end(); itr++)
+    {
+        if (itr -> pobierzId() == idUsuwanegoAdresata)
+        {
+            czyIstniejeAdresat = true;
+            cout << endl << "Potwierdz naciskajac klawisz 't': ";
+            znak = wczytajZnak();
+            if (znak == 't')
+            {
+                //numerLiniiUsuwanegoAdresata = zwrocNumerLiniiSzukanegoAdresata(idUsuwanegoAdresata);
+                usunWybranaLinieWPliku(idUsuwanegoAdresata);
+                adresaci.erase(itr);
+                cout << endl << endl << "Szukany adresat zostal USUNIETY" << endl << endl;
+                system("pause");
+                plikZAdresatami.podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(idUsuwanegoAdresata);
+                return;
+            }
+            else
+            {
+                cout << endl << endl << "Wybrany adresat NIE zostal usuniety" << endl << endl;
+                system("pause");
+                return;
+            }
+        }
+    }
+    if (czyIstniejeAdresat == false)
+    {
+        cout << endl << "Nie ma takiego adresata w ksiazce adresowej" << endl << endl;
+        system("pause");
+    }
+}
+int MenadzerAdresata::podajIdWybranegoAdresata()
+{
+    int idWybranegoAdresata = 0;
+    cout << "Podaj numer ID Adresata: ";
+    idWybranegoAdresata  = wczytajLiczbeCalkowita();
+    return idWybranegoAdresata;
+}
+void MenadzerAdresata::usunWybranaLinieWPliku(int idUsuwanegoAdresata)
+{
+    fstream odczytywanyPlikTekstowy, tymczasowyPlikTekstowy;
+    string wczytanaLinia = "";
+    int numerWczytanejLinii = 1;
+
+    odczytywanyPlikTekstowy.open(nazwaPlikuZAdresatami.c_str(), ios::in);
+    tymczasowyPlikTekstowy.open(nazwaTymczasowegoPlikuZAdresatami.c_str(), ios::out | ios::app);
+
+    if (odczytywanyPlikTekstowy.good() == true)
+    {
+        while (getline(odczytywanyPlikTekstowy, wczytanaLinia))
+        {
+            if (idUsuwanegoAdresata == plikZAdresatami.pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(wczytanaLinia))
+            {
+
+            }
+            else
+            {
+                if (numerWczytanejLinii == 1)
+                    tymczasowyPlikTekstowy << wczytanaLinia;
+                else
+                    tymczasowyPlikTekstowy << endl << wczytanaLinia;
+            }
+            numerWczytanejLinii++;
+        }
+        odczytywanyPlikTekstowy.close();
+        tymczasowyPlikTekstowy.close();
+
+        plikZAdresatami.usunPlik(nazwaPlikuZAdresatami);
+        plikZAdresatami.zmienNazwePliku(nazwaTymczasowegoPlikuZAdresatami, nazwaPlikuZAdresatami);
+    }
+}
+char MenadzerAdresata::wczytajZnak()
+{
+    string wejscie = "";
+    char znak  = {0};
+
+    while (true)
+    {
+        getline(cin, wejscie);
+
+        if (wejscie.length() == 1)
+        {
+            znak = wejscie[0];
+            break;
+        }
+        cout << "To nie jest pojedynczy znak. Wpisz ponownie." << endl;
+    }
+    return znak;
+}
+int MenadzerAdresata::wczytajLiczbeCalkowita()
+{
+    string wejscie = "";
+    int liczba = 0;
+
+    while (true)
+    {
+        getline(cin, wejscie);
+
+        stringstream myStream(wejscie);
+        if (myStream >> liczba)
+            break;
+        cout << "To nie jest liczba. Wpisz ponownie. " << endl;
+    }
+    return liczba;
+}
+
 

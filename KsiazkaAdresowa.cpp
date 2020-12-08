@@ -97,6 +97,10 @@ void KsiazkaAdresowa::dodajAdresata()
 {
     menadzerAdresata -> dodajAdresata ();
 }
+void KsiazkaAdresowa::usunAdresata()
+{
+    menadzerAdresata -> usunAdresata();
+}
 
 
 
